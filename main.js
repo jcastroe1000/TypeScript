@@ -1,61 +1,14 @@
 "use strict";
-const conducirBatimovil = (auto) => {
-    auto.encender = true;
-    auto.velocidadMaxima = 100;
-    auto.acelerar();
-};
-const batimovil = {
-    encender: false,
-    velocidadMaxima: 0,
-    acelear() {
-        console.log("...... gogogo!!!");
-    }
-};
-const reir = (guason) => {
-    if (guason.reir) {
-        console.log("JAJAJAJA");
-    }
-};
-const ciudadGotica = (ciudadanos) => {
-    return ciudadanos.length;
-};
-class Persona {
-    imprimirBio() {
-    }
-}
-(() => {
-})();
-(() => {
-    class mutant {
-        mutantPower(id) {
-            return this.name + '' + this.realName;
-        }
-    }
-})();
-(() => {
-    const client = {
-        name: 'Antonio',
-        age: 31,
-        address: {
-            id: 1234,
-            zip: 57170,
-            city: 'Mexico'
-        },
+var Validations;
+(function (Validations) {
+    Validations.validateText = (text) => {
+        return (text.length > 3) ? true : false;
     };
-    const client2 = {
-        name: 'Jose',
-        age: 31,
-        address: {
-            id: 1234,
-            zip: 57170,
-            city: 'Mexico'
-        },
+    const validateDate = (fecha) => {
+        return (isNaN(fecha.valueOf()))
+            ? false
+            : true;
     };
-})();
-(() => {
-    let addNumbersFunction;
-    addNumbersFunction = (a, b) => {
-        return 10;
-    };
-})();
+})(Validations || (Validations = {}));
+console.log(Validations.validateText('Jose'));
 //# sourceMappingURL=main.js.map

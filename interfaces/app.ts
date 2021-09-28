@@ -75,6 +75,6 @@ class Persona implements Person {
    public matiral_status:string;
 
    imprimirBio(){
-     
+      
    }
 }
